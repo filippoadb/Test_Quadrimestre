@@ -10,9 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 class PersonaService {
+    constructor() {
+        this.baseUrl = "http://localhost:5223/api/person";
+    }
     getPersone() {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch('http://localhost:5223/PersonaController/GetPersone');
+            const response = yield fetch(`${this.baseUrl}/GetPersone`);
             if (!response.ok) {
                 throw new Error('Errore nel recupero delle persone');
             }
@@ -21,7 +24,7 @@ class PersonaService {
     }
     addPersona(persona) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch('http://localhost:5223/PersonaController/AddPersona', {
+            const response = yield fetch(`${this.baseUrl}/AddPersona`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,7 +39,7 @@ class PersonaService {
     }
     updatePersona(persona) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch('http://localhost:5223/PersonaController/UpdatePersona', {
+            const response = yield fetch(`${this.baseUrl}/UpdatePersona`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,11 +49,12 @@ class PersonaService {
             if (!response.ok) {
                 throw new Error('Errore nell\'aggiornare la persona');
             }
+            return yield response.json();
         });
     }
     deletePersona(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(`http://localhost:5223/PersonaController/DeletePersona/${id}`, {
+            const response = yield fetch(`${this.baseUrl}/DeletePersona?id=${id}`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
@@ -60,4 +64,4 @@ class PersonaService {
     }
 }
 const Persona1 = new PersonaService();
-Persona1.getPersone();
+Persona1.getPersone().then(console.log).catch(console.error);
