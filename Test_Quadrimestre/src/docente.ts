@@ -1,7 +1,7 @@
 import { Person } from "./person"
 import { Dominio } from "./person";
 
-class Docente extends Person {
+export class Docente extends Person {
 
     get dominio(): string {
         return Dominio.Docente;
