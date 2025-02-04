@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Filippo\\source\\repos\\Esercizio_Quadrimestre\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3BFFBA-F3AE-4871-B385-C979D1EBDCD3}|Esercizio_Quadrimestre\\Esercizio_Quadrimestre.csproj|c:\\users\\filippo\\source\\repos\\esercizio_quadrimestre\\esercizio_quadrimestre\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3BFFBA-F3AE-4871-B385-C979D1EBDCD3}|Esercizio_Quadrimestre\\Esercizio_Quadrimestre.csproj|solutionrelative:esercizio_quadrimestre\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\Filippo\\source\\repos\\Esercizio_Quadrimestre\\Esercizio_Quadrimestre\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Esercizio_Quadrimestre\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\Filippo\\source\\repos\\Esercizio_Quadrimestre\\Esercizio_Quadrimestre\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Esercizio_Quadrimestre\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T10:39:10.925Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

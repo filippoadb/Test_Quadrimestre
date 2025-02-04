@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Esercizio_Quadrimestre.props" />
+</Project>
